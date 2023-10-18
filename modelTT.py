@@ -218,7 +218,7 @@ class TTCellModel:
     @staticmethod
     def callCppmodel(N,use_gpu=False,outpt="out.txt",inpt="m.txt"):  
      #   print("Calling solver")
-        name="c.exe"
+        name="./a.out"
         args=name +" --tf="+str(TTCellModel.tf)+" --ti="+str(TTCellModel.ti)+" --dt="+str(TTCellModel.dt)+" --dt_save="+str(TTCellModel.dtS) +" --n="+str(N)+" --i="+inpt+" --o="+outpt  
        
         if(use_gpu):
